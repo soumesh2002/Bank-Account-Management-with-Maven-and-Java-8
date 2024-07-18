@@ -4,17 +4,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Customer {
-    private int customerID;
+    private String customerID;
     private String customerName;
     private long phoneNumber;
     private String address;
     private Set<Account> accounts;
 
-    public int getCustomerID() {
+    public String getCustomerID() {
         return customerID;
     }
 
-    public void setCustomerID(int customerID) {
+    public void setCustomerID(String customerID) {
         this.customerID = customerID;
     }
 

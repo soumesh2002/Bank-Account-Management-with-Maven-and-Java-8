@@ -1,5 +1,9 @@
 package com.example.bankaccount.dao;
 
-public class BankDAO {
+import com.example.bankaccount.entity.Customer;
 
+public interface BankDAO {
+    void addCustomer(Customer customer);
+
+    Customer getCustomerById(String customerId);
 }
