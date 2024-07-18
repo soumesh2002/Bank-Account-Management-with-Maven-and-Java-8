@@ -1,6 +1,7 @@
 package com.example.bankaccount.entity;
 
 public abstract class Account {
+
     private String accountNumber;
     private String accountHolderName;
     private String accountType;
@@ -47,5 +48,11 @@ public abstract class Account {
 
     public void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
+    }
+
+    @Override
+    public String toString() {
+        return "Account [accountNumber=" + accountNumber + ", accountHolderName=" + accountHolderName + ", accountType="
+                + accountType + ", accountBalance=" + accountBalance + "]";
     }
 }
